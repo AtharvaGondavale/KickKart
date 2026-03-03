@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KickKart | Best Selling Football Gear</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="kk-page-alt">
+    <header class="kk-header">
+      <div class="kk-container kk-header-inner">
+        <a href="index.html" class="kk-logo">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </a>
+        <nav class="kk-nav">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html" class="is-active">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="kk-cart" id="kk-cart-button">
+          <span class="kk-cart-icon">🛒</span>
+          <span class="kk-cart-label">Cart</span>
+          <span class="kk-cart-count" id="kk-cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="kk-page-hero">
+        <div class="kk-container kk-page-hero-inner">
+          <div>
+            <p class="kk-eyebrow">Most Loved by Players</p>
+            <h1>Best Selling Football Gear</h1>
+            <p>
+              The community’s top picks – boots, jerseys, stockings, and gear trusted week after
+              week.
+            </p>
+          </div>
+          <div class="kk-filters">
+            <button class="kk-chip is-active" data-filter="all">All</button>
+            <button class="kk-chip" data-filter="boots">Boots</button>
+            <button class="kk-chip" data-filter="jerseys">Jerseys</button>
+            <button class="kk-chip" data-filter="gear">Gear</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="kk-section kk-section-tight">
+        <div class="kk-container">
+          <div class="kk-grid kk-grid-3 kk-product-grid" id="kk-best-sellers-grid">
+            <!-- Best sellers populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="kk-strip kk-strip-soft">
+        <div class="kk-container kk-strip-inner">
+          <div>
+            <h3>Ready to complete your kit?</h3>
+            <p>Review your cart, tweak sizes and finish checkout in under a minute.</p>
+          </div>
+          <a href="checkout.html" class="kk-btn kk-btn-primary kk-btn-pill">Go to Checkout</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kk-footer">
+      <div class="kk-container kk-footer-inner">
+        <div class="kk-footer-brand">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </div>
+        <div class="kk-footer-links">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="kk-footer-copy">Mock store for demo purposes only.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+

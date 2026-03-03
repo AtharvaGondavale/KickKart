@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KickKart | Football Gear Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="kk-header">
+      <div class="kk-container kk-header-inner">
+        <a href="index.html" class="kk-logo">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </a>
+        <nav class="kk-nav">
+          <a href="index.html" class="is-active">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="kk-cart" id="kk-cart-button">
+          <span class="kk-cart-icon">🛒</span>
+          <span class="kk-cart-label">Cart</span>
+          <span class="kk-cart-count" id="kk-cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="kk-hero">
+        <div class="kk-container kk-hero-inner">
+          <div class="kk-hero-copy">
+            <p class="kk-eyebrow">Premium Football Store</p>
+            <h1>Gear Up. Kick Hard. Play Fearless.</h1>
+            <p class="kk-hero-subtitle">
+              From elite boots to pro-grade jerseys, build your match-day kit with gear trusted
+              by top players around the world.
+            </p>
+            <div class="kk-hero-actions">
+              <a href="best-sellers.html" class="kk-btn kk-btn-primary">Shop Best Sellers</a>
+              <a href="#categories" class="kk-btn kk-btn-ghost">Explore Categories</a>
+            </div>
+            <div class="kk-hero-meta">
+              <div>
+                <span class="kk-meta-label">Free shipping</span>
+                <span class="kk-meta-value">on orders over $80</span>
+              </div>
+              <div>
+                <span class="kk-meta-label">Authentic gear</span>
+                <span class="kk-meta-value">trusted by 10k+ players</span>
+              </div>
+            </div>
+          </div>
+          <div class="kk-hero-visual">
+            <div class="kk-hero-card">
+              <img
+                src="Phantom Speed Pro FG Boots.webp"
+                alt="Player tying laces on Phantom Speed Pro football boots"
+              />
+              <div class="kk-hero-badge kk-hero-badge-top">
+                <span>New Drop</span>
+                <strong>Phantom Speed Pro</strong>
+              </div>
+              <div class="kk-hero-badge kk-hero-badge-bottom">
+                <span>Match Ready</span>
+                <strong>Built for 90+ mins</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="kk-section" id="categories">
+        <div class="kk-container">
+          <div class="kk-section-header">
+            <h2>Shop by Category</h2>
+            <p>Everything you need from head to toe to own the pitch.</p>
+          </div>
+          <div class="kk-grid kk-grid-4">
+            <article class="kk-card kk-card-category">
+              <div class="kk-card-media">
+                <img
+                  src="Boots &amp; Studs.jpg"
+                  alt="Football boots on turf"
+                />
+              </div>
+              <div class="kk-card-body">
+                <h3>Boots &amp; Studs</h3>
+                <p>Explosive speed, locked-in touch, and ruthless finishing.</p>
+                <button
+                  class="kk-chip kk-chip-outline"
+                  data-scroll-target="kk-featured-boots"
+                >
+                  View boots
+                </button>
+              </div>
+            </article>
+
+            <article class="kk-card kk-card-category">
+              <div class="kk-card-media">
+                <img
+                  src="Jerseys &amp; Kits.webp"
+                  alt="Football jersey hanging in locker room"
+                />
+              </div>
+              <div class="kk-card-body">
+                <h3>Jerseys &amp; Kits</h3>
+                <p>Club, country and custom kits designed to breathe and move.</p>
+                <button
+                  class="kk-chip kk-chip-outline"
+                  data-scroll-target="kk-featured-jerseys"
+                >
+                  View jerseys
+                </button>
+              </div>
+            </article>
+
+            <article class="kk-card kk-card-category">
+              <div class="kk-card-media">
+                <img
+                  src="Gloves &amp; Protection.jpg"
+                  alt="Goalkeeper gloves and football"
+                />
+              </div>
+              <div class="kk-card-body">
+                <h3>Gloves &amp; Protection</h3>
+                <p>Hold every shot with premium grip and impact protection.</p>
+                <button class="kk-chip kk-chip-outline" data-scroll-target="kk-featured-gear">
+                  View gear
+                </button>
+              </div>
+            </article>
+
+            <article class="kk-card kk-card-category">
+              <div class="kk-card-media">
+                <img
+                  src="Stockings &amp; Accessories.webp"
+                  alt="Football player wearing socks and shin guards"
+                />
+              </div>
+              <div class="kk-card-body">
+                <h3>Stockings &amp; Accessories</h3>
+                <p>Match socks, shin guards, training cones, and more.</p>
+                <button class="kk-chip kk-chip-outline" data-scroll-target="kk-featured-gear">
+                  View accessories
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured products -->
+      <section class="kk-section kk-section-alt">
+        <div class="kk-container">
+          <div class="kk-section-header">
+            <h2>Match Day Essentials</h2>
+            <p>Curated picks to upgrade your next 90 minutes.</p>
+          </div>
+
+          <h3 class="kk-subheading" id="kk-featured-boots">Elite Boots</h3>
+          <div class="kk-grid kk-grid-3 kk-product-grid" data-product-group="boots">
+            <!-- Products populated by JS -->
+          </div>
+
+          <h3 class="kk-subheading" id="kk-featured-jerseys">Pro Jerseys</h3>
+          <div class="kk-grid kk-grid-3 kk-product-grid" data-product-group="jerseys">
+            <!-- Products populated by JS -->
+          </div>
+
+          <h3 class="kk-subheading" id="kk-featured-gear">Training Gear &amp; More</h3>
+          <div class="kk-grid kk-grid-3 kk-product-grid" data-product-group="gear">
+            <!-- Products populated by JS -->
+          </div>
+
+          <div class="kk-cta-row">
+            <p>Want to see what everyone else is buying?</p>
+            <a href="best-sellers.html" class="kk-btn kk-btn-outline">View Best Sellers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strip -->
+      <section class="kk-strip">
+        <div class="kk-container kk-strip-inner">
+          <div>
+            <h3>Built for players, not just fans.</h3>
+            <p>
+              Every item on KickKart is tested in real training sessions and match situations, so
+              you can trust it when the whistle blows.
+            </p>
+          </div>
+          <a href="checkout.html" class="kk-btn kk-btn-primary kk-btn-pill">
+            Review Cart &amp; Checkout
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kk-footer">
+      <div class="kk-container kk-footer-inner">
+        <div class="kk-footer-brand">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </div>
+        <div class="kk-footer-links">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="kk-footer-copy">Mock store for demo purposes only.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+

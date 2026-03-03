@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KickKart | Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="kk-page-alt">
+    <header class="kk-header">
+      <div class="kk-container kk-header-inner">
+        <a href="index.html" class="kk-logo">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </a>
+        <nav class="kk-nav">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html" class="is-active">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="kk-cart" id="kk-cart-button">
+          <span class="kk-cart-icon">🛒</span>
+          <span class="kk-cart-label">Cart</span>
+          <span class="kk-cart-count" id="kk-cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="kk-page-hero kk-page-hero-compact">
+        <div class="kk-container kk-page-hero-inner">
+          <div>
+            <p class="kk-eyebrow">Secure Checkout</p>
+            <h1>Review &amp; Complete Your Order</h1>
+            <p>Mock checkout – no real payments are processed.</p>
+          </div>
+          <div class="kk-checkout-summary-pill">
+            <span id="kk-checkout-items-count">0 items</span>
+            <span class="kk-dot"></span>
+            <span>Total: $<span id="kk-checkout-total">0.00</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="kk-section kk-section-tight">
+        <div class="kk-container kk-checkout-layout">
+          <section class="kk-card kk-card-elevated kk-cart-card">
+            <header class="kk-card-header">
+              <h2>Your Cart</h2>
+              <button class="kk-link-btn" id="kk-clear-cart-btn">Clear cart</button>
+            </header>
+            <div id="kk-cart-empty-state" class="kk-empty-state">
+              <p>Your cart is empty.</p>
+              <a href="best-sellers.html" class="kk-btn kk-btn-outline kk-btn-small">
+                Browse Best Sellers
+              </a>
+            </div>
+            <ul id="kk-cart-items" class="kk-cart-items">
+              <!-- Items populated by JS -->
+            </ul>
+          </section>
+
+          <section class="kk-card kk-card-elevated kk-checkout-card">
+            <header class="kk-card-header">
+              <h2>Delivery Details</h2>
+            </header>
+            <form id="kk-checkout-form" class="kk-form">
+              <div class="kk-form-grid">
+                <div class="kk-field">
+                  <label for="kk-name">Full name</label>
+                  <input id="kk-name" name="name" type="text" required />
+                </div>
+                <div class="kk-field">
+                  <label for="kk-email">Email</label>
+                  <input id="kk-email" name="email" type="email" required />
+                </div>
+                <div class="kk-field">
+                  <label for="kk-phone">Phone</label>
+                  <input id="kk-phone" name="phone" type="tel" />
+                </div>
+                <div class="kk-field">
+                  <label for="kk-country">Country</label>
+                  <input id="kk-country" name="country" type="text" value="India" />
+                </div>
+                <div class="kk-field kk-field-full">
+                  <label for="kk-address">Address</label>
+                  <textarea id="kk-address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="kk-field kk-field-full">
+                  <label for="kk-notes">Order notes (optional)</label>
+                  <textarea id="kk-notes" name="notes" rows="2"></textarea>
+                </div>
+              </div>
+
+              <h3 class="kk-form-subheading">Payment</h3>
+              <div class="kk-field">
+                <label>Payment method</label>
+                <div class="kk-radio-row">
+                  <label class="kk-radio">
+                    <input type="radio" name="payment" value="card" checked />
+                    <span>Credit / Debit Card</span>
+                  </label>
+                  <label class="kk-radio">
+                    <input type="radio" name="payment" value="upi" />
+                    <span>UPI</span>
+                  </label>
+                  <label class="kk-radio">
+                    <input type="radio" name="payment" value="cod" />
+                    <span>Cash on Delivery</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="kk-order-summary">
+                <div>
+                  <span>Subtotal</span>
+                  <span>$<span id="kk-summary-subtotal">0.00</span></span>
+                </div>
+                <div>
+                  <span>Shipping</span>
+                  <span id="kk-summary-shipping">Calculated at next step</span>
+                </div>
+                <div class="kk-order-summary-total">
+                  <span>Total</span>
+                  <span>$<span id="kk-summary-total">0.00</span></span>
+                </div>
+              </div>
+
+              <button type="submit" class="kk-btn kk-btn-primary kk-btn-full">
+                Place Mock Order
+              </button>
+              <p class="kk-form-helper">
+                This is a demo checkout – you’ll see a confirmation message but no real order is
+                created.
+              </p>
+              <p class="kk-form-success" id="kk-checkout-success" hidden>
+                Thank you! Your mock order has been placed. You can safely refresh the page to
+                start over.
+              </p>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kk-footer">
+      <div class="kk-container kk-footer-inner">
+        <div class="kk-footer-brand">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </div>
+        <div class="kk-footer-links">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="kk-footer-copy">Mock store for demo purposes only.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+

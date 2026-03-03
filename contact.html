@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KickKart | Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="kk-page-alt">
+    <header class="kk-header">
+      <div class="kk-container kk-header-inner">
+        <a href="index.html" class="kk-logo">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </a>
+        <nav class="kk-nav">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html" class="is-active">Contact</a>
+        </nav>
+        <button class="kk-cart" id="kk-cart-button">
+          <span class="kk-cart-icon">🛒</span>
+          <span class="kk-cart-label">Cart</span>
+          <span class="kk-cart-count" id="kk-cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="kk-page-hero">
+        <div class="kk-container kk-page-hero-inner">
+          <div>
+            <p class="kk-eyebrow">We’d Love to Hear From You</p>
+            <h1>Contact KickKart Support</h1>
+            <p>
+              Questions about sizing, gear recommendations or bulk team orders? Send us a
+              message and we’ll respond as soon as we can.
+            </p>
+          </div>
+          <div class="kk-contact-meta">
+            <div>
+              <h3>Email</h3>
+              <p>support@kickkart.demo</p>
+            </div>
+            <div>
+              <h3>Phone / WhatsApp</h3>
+              <p>+91-90000-00000</p>
+            </div>
+            <div>
+              <h3>Support Hours</h3>
+              <p>Mon–Sat · 10:00–19:00 IST</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kk-section kk-section-tight">
+        <div class="kk-container kk-contact-layout">
+          <section class="kk-card kk-card-elevated kk-contact-card">
+            <header class="kk-card-header">
+              <h2>Send Us a Message</h2>
+            </header>
+            <form id="kk-contact-form" class="kk-form">
+              <div class="kk-form-grid">
+                <div class="kk-field">
+                  <label for="kk-contact-name">Full name</label>
+                  <input id="kk-contact-name" name="name" type="text" required />
+                </div>
+                <div class="kk-field">
+                  <label for="kk-contact-email">Email</label>
+                  <input id="kk-contact-email" name="email" type="email" required />
+                </div>
+                <div class="kk-field">
+                  <label for="kk-contact-type">What can we help with?</label>
+                  <select id="kk-contact-type" name="type" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="order">Order or checkout issue</option>
+                    <option value="product">Product question</option>
+                    <option value="team">Team / bulk order</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+                <div class="kk-field kk-field-full">
+                  <label for="kk-contact-message">Message</label>
+                  <textarea
+                    id="kk-contact-message"
+                    name="message"
+                    rows="4"
+                    minlength="10"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="kk-btn kk-btn-primary kk-btn-full">
+                Send Message
+              </button>
+              <p class="kk-form-helper">
+                This is a demo form – you’ll see a confirmation message, but no real request is
+                sent.
+              </p>
+              <p class="kk-form-success" id="kk-contact-success" hidden>
+                Thank you! Your message has been recorded for this demo.
+              </p>
+            </form>
+          </section>
+
+          <section class="kk-card kk-card-map">
+            <header class="kk-card-header">
+              <h2>Training Ground</h2>
+            </header>
+            <div class="kk-map-placeholder">
+              <div class="kk-map-overlay">
+                <span class="kk-map-tag">Practice Arena</span>
+                <h3>KickKart Demo HQ</h3>
+                <p>Mumbai, India · Virtual showroom only</p>
+              </div>
+            </div>
+            <p class="kk-map-caption">
+              This is a mock location for the project. Embed a real map here if you deploy the
+              site.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kk-footer">
+      <div class="kk-container kk-footer-inner">
+        <div class="kk-footer-brand">
+          <span class="kk-logo-icon">⚽</span>
+          <span class="kk-logo-text">KickKart</span>
+        </div>
+        <div class="kk-footer-links">
+          <a href="index.html">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="kk-footer-copy">Mock store for demo purposes only.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
